@@ -104,6 +104,9 @@ td {
   margin: auto;
 }
 
+table {
+  margin-bottom: 2rem;
+}
 /* .table {
   border: 1px solid black;
 }
@@ -178,6 +181,8 @@ td {
   display: inline-block;
 
   transition: all 0.3s;
+
+  margin-left: 2rem;
 }
 
 #btn--prev:hover,

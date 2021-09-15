@@ -114,6 +114,20 @@ const changePage = function (page) {
   if (page < 1) page = 1;
   if (page > numPages()) page = numPages();
 
+  //if page is first page then hide the prev button
+  if (page == 1) {
+    btn_prev.style.visibility = "hidden";
+  } else {
+    btn_prev.style.visibility = "visible";
+  }
+
+  //if page is last page page then hide the next button
+  if (page == numPages()) {
+    btn_next.style.visibility = "hidden";
+  } else {
+    btn_next.style.visibility = "visible";
+  }
+
   //empting the table body
   tableBody.innerHTML = "";
 
@@ -128,20 +142,6 @@ const changePage = function (page) {
   // page_span.innerHTML = page;
   prevPageNo.textContent = page - 1;
   nextPageNo.textContent = page + 1;
-
-  //if page is first page then hide the prev button
-  if (page == 1) {
-    btn_prev.style.visibility = "hidden";
-  } else {
-    btn_prev.style.visibility = "visible";
-  }
-
-  //if page is last page page then hide the next button
-  if (page == numPages()) {
-    btn_next.style.visibility = "hidden";
-  } else {
-    btn_next.style.visibility = "visible";
-  }
 };
 
 //getting the data and renderring into the table
