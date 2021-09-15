@@ -96,9 +96,9 @@ td {
   margin: auto;
 }
 
-table {
+/* table {
   margin-bottom: 2rem;
-}
+} */
 
 /* .table {
   border: 1px solid black;
@@ -124,4 +124,55 @@ table {
 
 .safe-zone {
   background-color: #c1d6cd;
+}
+
+/*-------------spinner--------------*/
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.svg {
+  height: 6rem;
+  width: 6rem;
+  animation: rotate 2s infinite linear;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------pagination--------------*/
+
+.pagination {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+  display: none;
+}
+
+#btn--prev,
+#btn--next {
+  width: fit-content;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  background-color: #c1d6cd;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#btn--next {
 }
