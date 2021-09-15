@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Covid Tracker - App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="heading-container">
+          <h1 class="heading">Global Covid Tracker</h1>
+        </div>
+        <ul class="indicators">
+          <li class="indicator">
+            <span id="indicator__sensitive-cases"></span>
+            <h6>Sensitive Cases</h6>
+          </li>
+          <li class="indicator">
+            <span id="indicator__warning-cases"></span>
+            <h6>Warning Cases</h6>
+          </li>
+          <li class="indicator">
+            <span id="indicator__recovery-cases"></span>
+            <h6>Recovery Cases</h6>
+          </li>
+          <li class="indicator">
+            <span id="indicator__safe-zone"></span>
+            <h6>Safe Zone</h6>
+          </li>
+        </ul>
+      </div>
+      <table class="table">
+        <thead>
+          <tr class="table--row">
+            <th>Sr. No.</th>
+            <th>Country</th>
+            <th>Cases Today</th>
+            <th>Death Today</th>
+            <th>Recovered Cases</th>
+            <th>Active Cases</th>
+          </tr>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading-container {
+}
+
+.heading {
+}
+
+.indicators {
+  list-style: none;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+
+  grid-gap: 3rem;
+
+  padding: 1rem;
+}
+
+.indicator:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.indicator h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#indicator__sensitive-cases,
+#indicator__warning-cases,
+#indicator__recovery-cases,
+#indicator__safe-zone {
+  display: inline-block;
+  height: 2rem;
+  width: 5rem;
+}
+
+#indicator__sensitive-cases {
+  background-color: #e6c7ca;
+}
+
+#indicator__warning-cases {
+  background-color: #ece1be;
+}
+
+#indicator__recovery-cases {
+  background-color: #c0e2e9;
+}
+
+#indicator__safe-zone {
+  background-color: #c1d6cd;
+}
+
+table,
+th,
+td {
+  border: 1px solid grey;
+  padding: 1rem 1.5rem;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+/* .table {
+  border: 1px solid black;
+}
+
+.table--row {
+  border: 1px solid black;
+} */
+
+/*--------------indicators flag----------------*/
+
+.sensitive-case {
+  background-color: #e6c7ca;
+}
+
+.warning-cases {
+  background-color: #ece1be;
+}
+
+.recovery-cases {
+  background-color: #c0e2e9;
+}
+
+.safe-zone {
+  background-color: #c1d6cd;
+}
